@@ -1,6 +1,6 @@
 ﻿namespace SimpleCalculatorProject
 {
-    partial class Form1
+    partial class MAIN
     {
         /// <summary>
         /// Required designer variable.
@@ -57,6 +57,7 @@
             this.B0.TabIndex = 1;
             this.B0.Text = "0";
             this.B0.UseVisualStyleBackColor = true;
+            this.B0.Click += new System.EventHandler(this.B0_Click);
             // 
             // B1
             // 
@@ -66,6 +67,7 @@
             this.B1.TabIndex = 2;
             this.B1.Text = "1";
             this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.B1_Click);
             // 
             // B2
             // 
@@ -75,6 +77,7 @@
             this.B2.TabIndex = 3;
             this.B2.Text = "2";
             this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.B2_Click);
             // 
             // B3
             // 
@@ -84,6 +87,7 @@
             this.B3.TabIndex = 4;
             this.B3.Text = "3";
             this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.B3_Click);
             // 
             // B4
             // 
@@ -93,6 +97,7 @@
             this.B4.TabIndex = 5;
             this.B4.Text = "4";
             this.B4.UseVisualStyleBackColor = true;
+            this.B4.Click += new System.EventHandler(this.B4_Click);
             // 
             // B5
             // 
@@ -102,6 +107,7 @@
             this.B5.TabIndex = 6;
             this.B5.Text = "5";
             this.B5.UseVisualStyleBackColor = true;
+            this.B5.Click += new System.EventHandler(this.B5_Click);
             // 
             // B6
             // 
@@ -111,6 +117,7 @@
             this.B6.TabIndex = 7;
             this.B6.Text = "6";
             this.B6.UseVisualStyleBackColor = true;
+            this.B6.Click += new System.EventHandler(this.B6_Click);
             // 
             // B7
             // 
@@ -120,6 +127,7 @@
             this.B7.TabIndex = 8;
             this.B7.Text = "7";
             this.B7.UseVisualStyleBackColor = true;
+            this.B7.Click += new System.EventHandler(this.B7_Click);
             // 
             // B8
             // 
@@ -129,6 +137,7 @@
             this.B8.TabIndex = 9;
             this.B8.Text = "8";
             this.B8.UseVisualStyleBackColor = true;
+            this.B8.Click += new System.EventHandler(this.B8_Click);
             // 
             // B9
             // 
@@ -138,8 +147,9 @@
             this.B9.TabIndex = 10;
             this.B9.Text = "9";
             this.B9.UseVisualStyleBackColor = true;
+            this.B9.Click += new System.EventHandler(this.B9_Click);
             // 
-            // Form1
+            // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,7 +165,7 @@
             this.Controls.Add(this.B1);
             this.Controls.Add(this.B0);
             this.Controls.Add(this.outputBox);
-            this.Name = "Form1";
+            this.Name = "MAIN";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
