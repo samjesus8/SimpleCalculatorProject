@@ -93,6 +93,9 @@ namespace SimpleCalculatorProject
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
+            numbers.temp1 = int.Parse(outputBox.Text);
+            outputBox.Clear();
+
             numbers.Add = false;
             numbers.Minus = false;
             numbers.Multiply = true;
@@ -101,6 +104,9 @@ namespace SimpleCalculatorProject
 
         private void minusButton_Click(object sender, EventArgs e)
         {
+            numbers.temp1 = int.Parse(outputBox.Text);
+            outputBox.Clear();
+
             numbers.Add = false;
             numbers.Minus = true;
             numbers.Multiply = false;
@@ -109,6 +115,9 @@ namespace SimpleCalculatorProject
 
         private void divideButton_Click(object sender, EventArgs e)
         {
+            numbers.temp1 = int.Parse(outputBox.Text);
+            outputBox.Clear();
+
             numbers.Add = false;
             numbers.Minus = false;
             numbers.Multiply = false;
