@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 
 namespace SimpleCalculatorProject
 {
@@ -27,10 +27,7 @@ namespace SimpleCalculatorProject
         public int temp1 { get; set; }
         public int temp2 { get; set; }
 
-        public Numbers() 
-        {
-
-        }
+        public string LogData { get; set; }
 
         public int GetAnswer(int input1, int input2) 
         {
@@ -60,6 +57,37 @@ namespace SimpleCalculatorProject
             {
                 return 0;
             }
+        }
+        public void WriteLog(string input) 
+        {
+            try
+            {
+                using (StreamWriter sw = new StreamWriter("log.txt", true, System.Text.Encoding.UTF8))
+                {
+                    sw.WriteLine(input);
+                    sw.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public string ShowLog() 
+        {
+            try 
+            {
+                using (StreamReader sr = new StreamReader("log.txt"))
+                {
+                    this.LogData = sr.ReadToEnd();
+                    sr.Close();
+                }
+            } 
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return this.LogData;
         }
     }
 }

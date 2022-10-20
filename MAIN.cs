@@ -76,6 +76,9 @@ namespace SimpleCalculatorProject
         {
             numbers.temp2 = int.Parse(outputBox.Text);
             int result = numbers.GetAnswer(numbers.temp1, numbers.temp2);
+            string log = numbers.temp1.ToString() + " + " + numbers.temp2.ToString() + " = " + result;
+
+            numbers.WriteLog(log);
 
             outputBox.Text = result.ToString();
         }
@@ -129,6 +132,11 @@ namespace SimpleCalculatorProject
             outputBox.Clear();
             numbers.temp1 = 0;
             numbers.temp2 = 0;
+        }
+
+        private void viewLogButton_Click(object sender, EventArgs e)
+        {
+            logBox.Text = numbers.ShowLog();
         }
     }
 }

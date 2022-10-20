@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
             this.outputBox = new System.Windows.Forms.TextBox();
             this.B0 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
@@ -46,10 +47,14 @@
             this.equalsButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.logBox = new System.Windows.Forms.TextBox();
+            this.viewLogButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // outputBox
             // 
+            this.outputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputBox.Location = new System.Drawing.Point(16, 15);
             this.outputBox.Margin = new System.Windows.Forms.Padding(4);
             this.outputBox.Multiline = true;
@@ -59,6 +64,7 @@
             // 
             // B0
             // 
+            this.B0.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B0.Location = new System.Drawing.Point(17, 450);
             this.B0.Margin = new System.Windows.Forms.Padding(4);
             this.B0.Name = "B0";
@@ -70,6 +76,7 @@
             // 
             // B1
             // 
+            this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B1.Location = new System.Drawing.Point(17, 368);
             this.B1.Margin = new System.Windows.Forms.Padding(4);
             this.B1.Name = "B1";
@@ -81,6 +88,7 @@
             // 
             // B2
             // 
+            this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B2.Location = new System.Drawing.Point(125, 368);
             this.B2.Margin = new System.Windows.Forms.Padding(4);
             this.B2.Name = "B2";
@@ -92,6 +100,7 @@
             // 
             // B3
             // 
+            this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B3.Location = new System.Drawing.Point(233, 368);
             this.B3.Margin = new System.Windows.Forms.Padding(4);
             this.B3.Name = "B3";
@@ -103,6 +112,7 @@
             // 
             // B4
             // 
+            this.B4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B4.Location = new System.Drawing.Point(16, 286);
             this.B4.Margin = new System.Windows.Forms.Padding(4);
             this.B4.Name = "B4";
@@ -114,6 +124,7 @@
             // 
             // B5
             // 
+            this.B5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B5.Location = new System.Drawing.Point(125, 286);
             this.B5.Margin = new System.Windows.Forms.Padding(4);
             this.B5.Name = "B5";
@@ -125,6 +136,7 @@
             // 
             // B6
             // 
+            this.B6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B6.Location = new System.Drawing.Point(233, 286);
             this.B6.Margin = new System.Windows.Forms.Padding(4);
             this.B6.Name = "B6";
@@ -136,6 +148,7 @@
             // 
             // B7
             // 
+            this.B7.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B7.Location = new System.Drawing.Point(17, 203);
             this.B7.Margin = new System.Windows.Forms.Padding(4);
             this.B7.Name = "B7";
@@ -147,6 +160,7 @@
             // 
             // B8
             // 
+            this.B8.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B8.Location = new System.Drawing.Point(125, 203);
             this.B8.Margin = new System.Windows.Forms.Padding(4);
             this.B8.Name = "B8";
@@ -158,6 +172,7 @@
             // 
             // B9
             // 
+            this.B9.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B9.Location = new System.Drawing.Point(233, 203);
             this.B9.Margin = new System.Windows.Forms.Padding(4);
             this.B9.Name = "B9";
@@ -169,6 +184,7 @@
             // 
             // addButton
             // 
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.Location = new System.Drawing.Point(352, 214);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(44, 53);
@@ -179,6 +195,7 @@
             // 
             // minusButton
             // 
+            this.minusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minusButton.Location = new System.Drawing.Point(352, 297);
             this.minusButton.Name = "minusButton";
             this.minusButton.Size = new System.Drawing.Size(44, 53);
@@ -189,6 +206,7 @@
             // 
             // multiplyButton
             // 
+            this.multiplyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplyButton.Location = new System.Drawing.Point(420, 214);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(44, 53);
@@ -199,6 +217,7 @@
             // 
             // divideButton
             // 
+            this.divideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divideButton.Location = new System.Drawing.Point(420, 297);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(44, 53);
@@ -209,6 +228,7 @@
             // 
             // equalsButton
             // 
+            this.equalsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equalsButton.Location = new System.Drawing.Point(352, 472);
             this.equalsButton.Name = "equalsButton";
             this.equalsButton.Size = new System.Drawing.Size(112, 53);
@@ -230,18 +250,50 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(314, 529);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(545, 532);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 16);
+            this.label1.Size = new System.Drawing.Size(386, 29);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Copyright SamuelJesuthas";
+            this.label1.Text = "Copyright SamuelJesuthas 2022";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(484, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 16);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Log";
+            // 
+            // logBox
+            // 
+            this.logBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logBox.Location = new System.Drawing.Point(487, 35);
+            this.logBox.Multiline = true;
+            this.logBox.Name = "logBox";
+            this.logBox.Size = new System.Drawing.Size(461, 478);
+            this.logBox.TabIndex = 19;
+            // 
+            // viewLogButton
+            // 
+            this.viewLogButton.Location = new System.Drawing.Point(320, 110);
+            this.viewLogButton.Name = "viewLogButton";
+            this.viewLogButton.Size = new System.Drawing.Size(75, 23);
+            this.viewLogButton.TabIndex = 20;
+            this.viewLogButton.Text = "Log";
+            this.viewLogButton.UseVisualStyleBackColor = true;
+            this.viewLogButton.Click += new System.EventHandler(this.viewLogButton_Click);
             // 
             // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(493, 554);
+            this.ClientSize = new System.Drawing.Size(960, 561);
+            this.Controls.Add(this.viewLogButton);
+            this.Controls.Add(this.logBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.equalsButton);
@@ -261,9 +313,10 @@
             this.Controls.Add(this.B0);
             this.Controls.Add(this.outputBox);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MAIN";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +342,9 @@
         private System.Windows.Forms.Button equalsButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox logBox;
+        private System.Windows.Forms.Button viewLogButton;
     }
 }
 
