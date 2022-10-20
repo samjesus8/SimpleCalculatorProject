@@ -44,6 +44,7 @@
             this.multiplyButton = new System.Windows.Forms.Button();
             this.divideButton = new System.Windows.Forms.Button();
             this.equalsButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // outputBox
@@ -215,12 +216,23 @@
             this.equalsButton.UseVisualStyleBackColor = true;
             this.equalsButton.Click += new System.EventHandler(this.equalsButton_Click);
             // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(401, 110);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 16;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(493, 554);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.equalsButton);
             this.Controls.Add(this.divideButton);
             this.Controls.Add(this.multiplyButton);
@@ -264,6 +276,7 @@
         private System.Windows.Forms.Button multiplyButton;
         private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button equalsButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 

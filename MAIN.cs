@@ -114,5 +114,12 @@ namespace SimpleCalculatorProject
             numbers.Multiply = false;
             numbers.Divide = true;
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            outputBox.Clear();
+            numbers.temp1 = 0;
+            numbers.temp2 = 0;
+        }
     }
 }
