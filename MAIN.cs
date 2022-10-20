@@ -76,7 +76,7 @@ namespace SimpleCalculatorProject
         {
             numbers.temp2 = int.Parse(outputBox.Text);
             int result = numbers.GetAnswer(numbers.temp1, numbers.temp2);
-            string log = numbers.temp1.ToString() + " + " + numbers.temp2.ToString() + " = " + result;
+            string log = numbers.temp1.ToString() + " " + numbers.tempFunction + " " + numbers.temp2.ToString() + " = " + result + " | " + DateTime.Now.ToString();
 
             numbers.WriteLog(log);
 
@@ -130,6 +130,9 @@ namespace SimpleCalculatorProject
         private void clearButton_Click(object sender, EventArgs e)
         {
             outputBox.Clear();
+            logBox.Clear();
+            numbers.ClearLog();
+
             numbers.temp1 = 0;
             numbers.temp2 = 0;
         }

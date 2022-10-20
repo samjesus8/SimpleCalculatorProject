@@ -26,6 +26,7 @@ namespace SimpleCalculatorProject
 
         public int temp1 { get; set; }
         public int temp2 { get; set; }
+        public string tempFunction { get; set; }
 
         public string LogData { get; set; }
 
@@ -35,27 +36,33 @@ namespace SimpleCalculatorProject
 
             if (this.Add == true)
             {
+                this.tempFunction = "+";
                 result = input1 + input2;
                 return result;
             }
             else if (this.Minus == true)
             {
+                this.tempFunction = "-";
                 result = input1 - input2;
                 return result;
             }
             else if (this.Multiply == true)
             {
+                this.tempFunction = "X";
                 result = input1 * input2;
                 return result;
             }
             else if (this.Divide == true)
             {
+                this.tempFunction = "÷";
                 result = input1 / input2;
                 return result;
             }
             else 
             {
-                return 0;
+                this.tempFunction = "null";
+                result = 0;
+                return result;
             }
         }
         public void WriteLog(string input) 
@@ -64,7 +71,8 @@ namespace SimpleCalculatorProject
             {
                 using (StreamWriter sw = new StreamWriter("log.txt", true, System.Text.Encoding.UTF8))
                 {
-                    sw.WriteLine(input);
+                    sw.Write(input);
+                    sw.WriteLine("");
                     sw.Close();
                 }
             }
@@ -88,6 +96,13 @@ namespace SimpleCalculatorProject
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return this.LogData;
+        }
+        public void ClearLog() 
+        {
+            using (StreamWriter sw = new StreamWriter("log.txt")) 
+            {
+                sw.WriteLine(" ");
+            }
         }
     }
 }
